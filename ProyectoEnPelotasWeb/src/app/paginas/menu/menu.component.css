@@ -1,3 +1,40 @@
-.menu{
-    background-color: lightgray;
+nav{
+    margin: 0;
+    background-color: #160053;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+}
+
+.menu-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 28px;
+}
+
+.logo{
+    font-size: 32px;
+    font-weight: 900;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px;
+}
+
+.logo img{
+    width: 48px;
+    height: 48px;
+}
+
+.options input{
+    padding: 0 18px;
+    margin: 0 30px;
 }

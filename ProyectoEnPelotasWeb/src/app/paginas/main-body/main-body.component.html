@@ -1,1 +1,12 @@
-<p>main-body works!</p>
+<section>
+    <h2>Todos los balones (4)</h2>
+    <div class="items-section">
+        <div class="item-container" *ngFor="let item of items.productos">
+            <img src="{{ item.image }}" alt="">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.short_desc }}</p>
+            <p>{{ item.price }}</p>
+            <button>Añadir</button>
+        </div>
+    </div>
+</section>

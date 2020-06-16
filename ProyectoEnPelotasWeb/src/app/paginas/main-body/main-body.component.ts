@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemsService } from 'src/app/servicios/items.service';
 
 @Component({
   selector: 'app-main-body',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainBodyComponent implements OnInit {
 
-  constructor() { }
+  constructor( public items: ItemsService) { }
 
   ngOnInit(): void {
   }

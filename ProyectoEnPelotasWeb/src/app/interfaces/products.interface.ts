@@ -3,6 +3,7 @@ export interface ProductsInterface {
     title?: string;
     short_desc?: string;
     long_desc?: string;
+    brand?: string;
     price?: number;
     stock?: number
     category?: string;

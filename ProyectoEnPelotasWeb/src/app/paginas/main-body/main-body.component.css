@@ -16,4 +16,27 @@
     width: 180px;
     height: 160px;
     object-fit: cover;
+    border-radius: 50%;
+}
+
+.item-brand{
+    font-weight: 100;
+}
+
+.item-desc{
+   
+}
+
+.item-price{
+    color: #a9ffbf;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+button{
+    background-color: #160053;
+    box-shadow: 1px 2px 0 #220080;
+    padding: 12px 28px;
+    color: #ffffff;
+    font-weight: 700;
 }

@@ -1,0 +1,19 @@
+.items-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.item-container{
+    background-color: #fcfcfc;
+    text-align: center;
+    padding: 8px;
+    margin: 12px;
+    width: 20%;
+}
+
+.item-container img{
+    width: 180px;
+    height: 160px;
+    object-fit: cover;
+}

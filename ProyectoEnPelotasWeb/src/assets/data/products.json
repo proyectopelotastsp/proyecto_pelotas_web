@@ -1,0 +1,102 @@
+[
+    {
+        "sku": "000001",
+        "title": "Balón",
+        "short_desc": "Balon de futbol",
+        "long_desc": "Balon de futbol",
+        "price": "12000",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRLBRsEtf21aOtP8fiartt6lD67m_7J6JU7ji3sm6iA7HqydSLJ&usqp=CAU",
+        "stock": "25",
+        "category": "Futbol"
+    },
+    {
+        "sku": "000002",
+        "title": "Balón",
+        "short_desc": "Balon de futbol",
+        "long_desc": "Balon de futbol",
+        "price": "12000",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "stock": "25",
+        "category": "Futbol"
+    },
+    {
+        "sku": "000003",
+        "title": "Lorem ipsum",
+        "short_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
+        "price": "0",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "stock": "0",
+        "category": "Futbol"
+    },
+    {
+        "sku": "000004",
+        "title": "Lorem ipsum",
+        "short_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
+        "price": "0",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "stock": "0",
+        "category": "Futbol"
+    },
+    {
+        "sku": "000005",
+        "title": "Lorem ipsum",
+        "short_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
+        "price": "0",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "stock": "0",
+        "category": "Futbol"
+    },
+    {
+        "sku": "000006",
+        "title": "Lorem ipsum",
+        "short_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
+        "price": "0",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "stock": "0",
+        "category": "Futbol"
+    },
+    {
+        "sku": "000007",
+        "title": "Lorem ipsum",
+        "short_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
+        "price": "0",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "stock": "0",
+        "category": "Futbol"
+    },
+    {
+        "sku": "000008",
+        "title": "Lorem ipsum",
+        "short_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
+        "price": "0",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "stock": "0",
+        "category": "Futbol"
+    },
+    {
+        "sku": "000009",
+        "title": "Lorem ipsum",
+        "short_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
+        "price": "0",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "stock": "0",
+        "category": "Futbol"
+    },
+    {
+        "sku": "000010",
+        "title": "Lorem ipsum",
+        "short_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
+        "price": "0",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "stock": "0",
+        "category": "Futbol"
+    }
+]

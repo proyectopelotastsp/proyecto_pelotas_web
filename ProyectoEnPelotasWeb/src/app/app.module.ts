@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './paginas/menu/menu.component';
 import { MainBodyComponent } from './paginas/main-body/main-body.component';
 import { FooterComponent } from './paginas/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './paginas/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

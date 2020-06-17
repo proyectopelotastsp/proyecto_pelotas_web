@@ -24,6 +24,8 @@ nav{
 }
 
 a{
+    font-size: 22px;
+    text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
     padding: 12px;

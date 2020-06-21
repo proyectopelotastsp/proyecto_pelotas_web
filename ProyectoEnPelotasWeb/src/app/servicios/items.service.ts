@@ -6,10 +6,10 @@ import { ProductsInterface } from '../interfaces/products.interface';
   providedIn: 'root'
 })
 export class ItemsService {
-  productos : Array<ProductsInterface>;
+  productos : Array<ProductsInterface> = new Array<ProductsInterface>();
 
   constructor( private http: HttpClient) { 
-    this.http.get('assets/data/products.json').subscribe( (resp: ProductsInterface) =>{
+    this.http.get('assets/data/products.json').subscribe( (resp: Array<ProductsInterface>) =>{
       this.productos = resp;
     });
   }

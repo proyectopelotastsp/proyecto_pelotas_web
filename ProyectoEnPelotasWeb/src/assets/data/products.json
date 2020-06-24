@@ -45,23 +45,23 @@
     },
     {
         "sku": "000005",
-        "title": "Lorem ipsum",
+        "title": "Pelota de playa",
         "short_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
         "brand": "Lorem",
         "price": "0",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Molten_GL7.jpg",
         "stock": "0",
         "category": "Futbol"
     },
     {
         "sku": "000006",
-        "title": "Lorem ipsum",
+        "title": "Balón De Basketball Naranja-Negr",
         "short_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
-        "brand": "Lorem",
+        "brand": "Nike",
         "price": "0",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
+        "image": "https://dafitistaticco-a.akamaihd.net/p/nike-0809-090249-1-cart.jpg",
         "stock": "0",
         "category": "Futbol"
     },

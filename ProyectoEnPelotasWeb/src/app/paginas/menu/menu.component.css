@@ -40,3 +40,7 @@ a{
     padding: 0 18px;
     margin: 0 30px;
 }
+
+.boton-enviar{
+    background-color: blueviolet;
+}

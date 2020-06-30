@@ -9,6 +9,7 @@ import { ItemsService } from 'src/app/servicios/items.service';
 export class MenuComponent implements OnInit {
   signUp: boolean = false;
   login: boolean = false;
+  carrito: boolean = false;
 
   constructor( public items: ItemsService) { 
     // console.log(this.items.productos);
@@ -24,5 +25,7 @@ export class MenuComponent implements OnInit {
   Login(){
     this.login = !this.login;
   }
-
+  Carrito(){
+    this.carrito = !this.carrito;
+  }
 }

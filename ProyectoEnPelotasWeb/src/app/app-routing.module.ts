@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
+import { MainBodyComponent } from './paginas/main-body/main-body.component';
+import { FutbolComponent } from './paginas/categorias/futbol/futbol.component';
 
 const routes: Routes = [
-  {path: 'inicio', component:}
+  {path: 'inicio', component: MainBodyComponent},
+  {path: 'futbol', component: FutbolComponent}
 ];
 
 @NgModule({

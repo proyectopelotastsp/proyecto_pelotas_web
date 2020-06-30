@@ -9,6 +9,7 @@ import { CartInterface } from '../interfaces/cart.interface';
 export class ItemsService {
   productos : Array<ProductsInterface> = new Array<ProductsInterface>();
   carrito : Array<CartInterface> = new Array<CartInterface>();
+  cartCount: number;
 
   constructor( private http: HttpClient) { 
     this.http.get('assets/data/products.json').subscribe( (resp: Array<ProductsInterface>) =>{

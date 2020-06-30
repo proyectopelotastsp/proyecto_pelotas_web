@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ItemsService } from 'src/app/servicios/items.service';
+import { MenuComponent } from '../menu/menu.component';
 
 @Component({
   selector: 'app-main-body',
@@ -8,7 +9,8 @@ import { ItemsService } from 'src/app/servicios/items.service';
 })
 export class MainBodyComponent implements OnInit {
 
-  constructor( public items: ItemsService) { }
+  constructor( public items: ItemsService) {
+   }
 
   ngOnInit(): void {
   }
@@ -49,8 +51,9 @@ export class MainBodyComponent implements OnInit {
         
       }
     );
-
+    this.items.cartCount = this.items.carrito.length;
     console.log(this.items.carrito);
+    console.log(this.items.carrito.length);
   }
 
 }

@@ -6,7 +6,7 @@ import { FutbolComponent } from './paginas/categorias/futbol/futbol.component';
 const routes: Routes = [
   {path: 'inicio', component: MainBodyComponent},
   {path: 'futbol', component: FutbolComponent},
- {}
+  {path: '**', pathMatch: 'full', redirectTo: 'inicio'}
 ];
 
 @NgModule({

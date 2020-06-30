@@ -41,6 +41,13 @@ a{
     margin: 0 30px;
 }
 
-.boton-enviar{
-    background-color: blueviolet;
+
+.count{
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    /* font-weight: 100; */
+    border-radius: 50%;
+    color: #160053;
+
 }

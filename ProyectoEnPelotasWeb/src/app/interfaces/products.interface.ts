@@ -1,10 +1,11 @@
 export interface ProductsInterface {
-    sku?: number;
+    sku?: string;
     title?: string;
     short_desc?: string;
     long_desc?: string;
     brand?: string;
     price?: number;
-    stock?: number
+    stock?: number;
+    quantity?: number;
     category?: string;
 }

@@ -9,8 +9,8 @@
             <a href=""><i class="fas fa-cart-plus"><span class="count">{{items.cartCount}}</span></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>
-            <a href="">Inicia sesión</a>
-            <a href="">Registrate</a>
+            <a (click)="Login()">Inicia sesión</a>
+            <a (click)="SignUp()">Registrate</a>
         </div>
     </div>
     <div class="menu-links">
@@ -23,5 +23,21 @@
     </div>
 </nav>
 
-<div></div>
+<div>
+    <div *ngIf="login" class="modal-box">
+        <div class="modal-content">
+          <button (click)="Login()" class="close">&times;</button>
+          <p>Inicia sesion</p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div *ngIf="signUp" class="modal-box">
+        <div class="modal-content">
+          <button (click)="SignUp()" class="close">&times;</button>
+          <p>Registrate</p>
+        </div>
+    </div>
+</div>
 

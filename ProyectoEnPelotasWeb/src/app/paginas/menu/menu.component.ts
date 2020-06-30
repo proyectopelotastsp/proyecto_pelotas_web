@@ -7,7 +7,8 @@ import { ItemsService } from 'src/app/servicios/items.service';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
- 
+  signUp: boolean = false;
+  login: boolean = false;
 
   constructor( public items: ItemsService) { 
     // console.log(this.items.productos);
@@ -16,6 +17,12 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
- 
+  SignUp(){
+    this.signUp = !this.signUp;
+  }
+
+  Login(){
+    this.login = !this.login;
+  }
 
 }

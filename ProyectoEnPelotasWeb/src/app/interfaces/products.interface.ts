@@ -5,6 +5,7 @@ export interface ProductsInterface {
     long_desc?: string;
     brand?: string;
     price?: number;
+    image?: string;
     stock?: number;
     quantity?: number;
     category?: string;

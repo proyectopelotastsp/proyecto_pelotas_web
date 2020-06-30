@@ -9,6 +9,7 @@
             <p class="item-brand">{{ item.brand }}</p>
             <p class="item-desc">{{ item.short_desc }}</p>
             <p class="item-price">${{ item.price | number }}</p>
+            <button class="quantity-btn">-</button><span>{{ item.quantity }}</span><button class="quantity-btn">+</button><br>
             <button>Añadir</button>
         </div>
     </div>

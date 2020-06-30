@@ -10,6 +10,7 @@
     padding: 8px;
     margin: 12px;
     width: 20%;
+    border-radius: 3%;
 }
 
 .item-container img{
@@ -37,4 +38,10 @@ button{
     padding: 12px 28px;
     color: #ffffff;
     font-weight: 700;
+    margin: 12px;
+}
+
+.quantity-btn{
+    padding: 6px 6px;
+    margin: 0 12px;
 }

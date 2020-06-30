@@ -1,5 +1,5 @@
 export interface CartInterface {
-    sku?: number;
+    sku?: string;
     title?: string;
     image?: string;
     price?: number;

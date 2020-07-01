@@ -235,7 +235,7 @@
         "brand": "Lorem",
         "price": "0",
         "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Image_non_disponible.png",
-        "stock": 0,
+        "stock": 25,
         "quantity": 1,
         "category": "Futbol"
     }

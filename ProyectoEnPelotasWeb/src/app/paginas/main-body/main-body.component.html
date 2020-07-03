@@ -7,7 +7,7 @@
             <img src="{{ item.image }}" alt="">
             <h3>{{ item.title }}</h3>
             <p class="item-brand">{{ item.brand }}</p>
-            <p class="item-desc">{{ item.long_desc }}</p>
+            <p class="item-desc">{{ item.short_desc }}</p>
             <p class="item-price">${{ item.price | number }}</p>
             <!-- quantity selector -->
             <button (click)="ChangeQuantity('-', i , item.quantity)" class="quantity-btn">-</button>

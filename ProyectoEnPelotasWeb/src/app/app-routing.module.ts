@@ -5,7 +5,7 @@ import { FutbolComponent } from './paginas/categorias/futbol/futbol.component';
 import { PaginaDetalleComponent } from './paginas/pagina-detalle/pagina-detalle.component';
 
 const routes: Routes = [
-  {path: 'inicio', component: PaginaDetalleComponent},
+  {path: 'inicio', component: MainBodyComponent},
   {path: 'futbol', component: FutbolComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'inicio'}
 ];

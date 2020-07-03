@@ -1,13 +1,13 @@
 <section>
     <!-- imagen de la señora - Por Giovanny -->
-     <!-- <img src="https://okdiario.com/img/2018/05/25/inventor-del-futbol-655x368.jpg" alt="" class="banner"> -->
+      <img src="https://www.elcolombiano.com/documents/10157/0/580x396/0c15/580d365/none/11101/FJHJ/image_content_28193644_20170307083250.jpg" alt="" class="banner"> 
     <h2>Todos los balones (20)</h2>
     <div class="items-section">
         <div class="item-container" *ngFor="let item of items.productos; let i = index">
             <img src="{{ item.image }}" alt="">
             <h3>{{ item.title }}</h3>
             <p class="item-brand">{{ item.brand }}</p>
-            <p class="item-desc">{{ item.short_desc }}</p>
+            <p class="item-desc">{{ item.long_desc }}</p>
             <p class="item-price">${{ item.price | number }}</p>
             <!-- quantity selector -->
             <button (click)="ChangeQuantity('-', i , item.quantity)" class="quantity-btn">-</button>

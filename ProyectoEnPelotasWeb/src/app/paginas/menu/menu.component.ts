@@ -60,9 +60,12 @@ export class MenuComponent implements OnInit {
       return cliente.userName === userName;
     });
     console.log(usuarioActivo);
-
-    // if (pass !=== usuarioActivo.password){
-    //   console.log("contraseña erronea");
-    // }
+    if (!usuarioActivo){
+      console.log("usuario incorrecto");
+    }else if (pass !== usuarioActivo.password){
+      console.log("contraseña erronea");
+    }else{
+      console.log("sesión iniciada");
+    }
   }
 }

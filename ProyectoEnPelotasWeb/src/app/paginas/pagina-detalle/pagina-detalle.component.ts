@@ -7,10 +7,13 @@ import { ItemsService } from 'src/app/servicios/items.service';
   styleUrls: ['./pagina-detalle.component.css']
 })
 export class PaginaDetalleComponent implements OnInit {
-
-  constructor( public items: ItemsService) { }
+    
+  constructor( public items: ItemsService) {
+    this.sku = items.seleccionado.sku;
+   }
 
   ngOnInit(): void {
+
   }
 
 }

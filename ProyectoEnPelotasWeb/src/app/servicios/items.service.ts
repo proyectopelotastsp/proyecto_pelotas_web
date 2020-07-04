@@ -16,6 +16,7 @@ export class ItemsService {
   voleybol: Array<ProductsInterface> = new Array<ProductsInterface>();
   results: Array<ProductsInterface> = new Array<ProductsInterface>();
   carrito: Array<CartInterface> = new Array<CartInterface>();
+  seleccionado: Array<ProductsInterface> = new Array<ProductsInterface>();
   userActive: boolean = false;
   cartCount: number;
   cartTotal: number = 0;
@@ -61,11 +62,16 @@ export class ItemsService {
 
   public GoDetails(ref: string){
       this.LoadBalls().then(() => {
-        this.router.navigate(['/producto', ref]);
+        var productoSeleccionado = this.productos.find(producto => {
+          return producto.sku === ref;
+        });
         // this.results = this.productos.filter(product => product.category === query);
         // console.log(this.results);
         // this.query = ref;
+        this.seleccionado.push(productoSeleccionado);
+        this.router.navigate(['/producto', ref]);
         console.log(ref);
+        console.log(this.seleccionado);
       });
   }
 

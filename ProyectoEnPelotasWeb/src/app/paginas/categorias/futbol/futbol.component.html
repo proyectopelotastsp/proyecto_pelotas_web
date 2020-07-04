@@ -1,9 +1,9 @@
 <section>
     <!-- imagen de la señora - Por Giovanny -->
     <img src="https://okdiario.com/img/2018/05/25/inventor-del-futbol-655x368.jpg" alt="" class="banner">
-    <h4>Todos los balones ({{items.productos.length}})</h4>
+    <h4>Todos los balones ({{items.futbol.length}})</h4>
     <div class="items-section">
-        <div class="item-container" *ngFor="let item of items.productos; let i = index">
+        <div class="item-container" *ngFor="let item of items.futbol; let i = index">
             <img src="{{ item.image }}" alt="">
             <h3>{{ item.title }}</h3>
             <p class="item-brand">{{ item.brand }}</p>

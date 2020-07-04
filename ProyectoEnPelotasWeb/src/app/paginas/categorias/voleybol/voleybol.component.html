@@ -1,9 +1,9 @@
 <section>
     <!-- imagen de la señora - Por Giovanny -->
-    <img src="https://www.elcolombiano.com/documents/10157/0/580x396/0c15/580d365/none/11101/FJHJ/image_content_28193644_20170307083250.jpg" alt="" class="banner"> 
-    <h4>Todos los balones ({{items.productos.length}})</h4>
+    <img src="https://cdn.pixabay.com/photo/2019/04/06/20/39/volleyball-4108313_960_720.jpg" alt="" class="banner"> 
+    <h4>Todos los balones ({{items.voleybol.length}})</h4>
     <div class="items-section">
-        <div class="item-container" *ngFor="let item of items.productos; let i = index">
+        <div class="item-container" *ngFor="let item of items.voleybol; let i = index">
             <img src="{{ item.image }}" alt="">
             <h3>{{ item.title }}</h3>
             <p class="item-brand">{{ item.brand }}</p>

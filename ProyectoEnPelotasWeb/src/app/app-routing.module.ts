@@ -6,6 +6,7 @@ import { FutbolSalaComponent } from './paginas/categorias/futbol-sala/futbol-sal
 import { BaloncestoComponent } from './paginas/categorias/baloncesto/baloncesto.component';
 import { TennisComponent } from './paginas/categorias/tennis/tennis.component';
 import { VoleybolComponent } from './paginas/categorias/voleybol/voleybol.component';
+import { ResultadosComponent } from './paginas/resultados/resultados.component';
 
 const routes: Routes = [
   {path: 'inicio', component: MainBodyComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'baloncesto', component: BaloncestoComponent},
   {path: 'tennis', component: TennisComponent},
   {path: 'voleybol', component: VoleybolComponent},
+  {path: 'resultados/:query', component: ResultadosComponent},
   {path: '**', pathMatch: 'full', redirectTo: 'inicio'}
 ];
 

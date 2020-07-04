@@ -13,6 +13,7 @@ import { TennisComponent } from './paginas/categorias/tennis/tennis.component';
 import { BaloncestoComponent } from './paginas/categorias/baloncesto/baloncesto.component';
 import { VoleybolComponent } from './paginas/categorias/voleybol/voleybol.component';
 import { PaginaDetalleComponent } from './paginas/pagina-detalle/pagina-detalle.component';
+import { ResultadosComponent } from './paginas/resultados/resultados.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PaginaDetalleComponent } from './paginas/pagina-detalle/pagina-detalle.
     TennisComponent,
     BaloncestoComponent,
     VoleybolComponent,
-    PaginaDetalleComponent
+    PaginaDetalleComponent,
+    ResultadosComponent
   ],
   imports: [
     BrowserModule,

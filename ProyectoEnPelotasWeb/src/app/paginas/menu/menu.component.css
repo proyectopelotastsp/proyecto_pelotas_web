@@ -87,6 +87,7 @@ a, button{
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    overflow: auto;
     height: 80%;
   }
   
@@ -104,3 +105,26 @@ a, button{
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* CARRITO */
+
+.item-section{
+      margin: auto;
+}
+
+.item-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 24px;
+}
+
+  .item-container img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 4px;
+}

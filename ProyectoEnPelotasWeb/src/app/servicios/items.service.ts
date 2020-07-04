@@ -17,6 +17,7 @@ export class ItemsService {
   results: Array<ProductsInterface> = new Array<ProductsInterface>();
   carrito: Array<CartInterface> = new Array<CartInterface>();
   cartCount: number;
+  cartTotal: number = 0;
   query: string;
 
   constructor( private http: HttpClient , private router: Router) {

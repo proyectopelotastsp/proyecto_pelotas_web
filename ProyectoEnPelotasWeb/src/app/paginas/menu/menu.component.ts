@@ -11,8 +11,7 @@ export class MenuComponent implements OnInit {
   login: boolean = false;
   carrito: boolean = false;
 
-  constructor( public items: ItemsService) { 
-    // console.log(this.items.productos);
+  constructor( public items: ItemsService) {
    }
 
   ngOnInit(): void {

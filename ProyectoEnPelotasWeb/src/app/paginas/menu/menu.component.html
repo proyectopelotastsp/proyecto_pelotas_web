@@ -47,7 +47,17 @@
     <div *ngIf="carrito" class="modal-box">
         <div class="modal-content">
           <button (click)="Carrito()" class="close">&times;</button>
-          <p>Tu carrito esta vacio</p>
+          <!-- Contenido -->
+          <div class="items-section">
+              <h3>Carrito de compras</h3>
+            <div class="item-container" *ngFor="let item of items.carrito; let i = index">
+                <img src="{{ item.image }}" alt="">
+                <p>{{ item.title }} - (X{{ item.quantity }}) -</p>
+                <!-- <p class="item-price"></p> -->
+                <p class="item-price">${{ item.price | number }}</p>
+            </div>
+            <p>TOTAL: ${{ items.cartTotal | number }}</p>
+        </div>
         </div>
     </div>
 </div>

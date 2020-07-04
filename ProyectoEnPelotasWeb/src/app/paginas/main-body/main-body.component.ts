@@ -50,8 +50,7 @@ export class MainBodyComponent implements OnInit {
       }
     );
     this.items.cartCount = this.items.carrito.length;
-    console.log(this.items.carrito);
-    console.log(this.items.carrito.length);
+    this.items.cartTotal += totalPrice;
   }
 
 }

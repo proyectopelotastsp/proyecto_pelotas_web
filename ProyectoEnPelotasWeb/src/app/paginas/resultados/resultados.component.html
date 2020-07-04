@@ -1,1 +1,19 @@
-<p>resultados works!</p>
+
+<section>
+    <h4>Resultados de busqueda para la palabra {{ queryString }}</h4>
+    <div class="items-section">
+        <div class="item-container" *ngFor="let item of items.results; let i = index">
+            <img src="{{ item.image }}" alt="">
+            <h3>{{ item.title }}</h3>
+            <p class="item-brand">{{ item.brand }}</p>
+            <p class="item-desc">{{ item.short_desc }}</p>
+            <p class="item-price">${{ item.price | number }}</p>
+            <!-- quantity selector -->
+            <button (click)="ChangeQuantity('-', i , item.quantity)" class="quantity-btn">-</button>
+            <span>{{ item.quantity }}</span>
+            <button (click)="ChangeQuantity('+', i , item.quantity)" class="quantity-btn">+</button><br>
+            <!-- qs end -->
+            <button (click)="AddToCart(item.title, item.image, item.price, item.quantity, item.sku)">Añadir</button>
+        </div>
+    </div>
+</section>

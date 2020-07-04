@@ -17,6 +17,7 @@ export class ItemsService {
   results: Array<ProductsInterface> = new Array<ProductsInterface>();
   carrito: Array<CartInterface> = new Array<CartInterface>();
   cartCount: number;
+  query: string;
 
   constructor( private http: HttpClient , private router: Router) {
     this.LoadBalls().then(() => {
@@ -41,13 +42,16 @@ export class ItemsService {
     this.voleybol = this.productos.filter(product => product.category === 'Voleiball');
   }
 
+
   public SearchBalls(query: string){
-    // this.results = this.productos.filter(product => product.category === query);
-    // console.log(this.results);
+    this.LoadBalls();
     if (query.length <= 1){
       alert('no es una busqueda valida, intenta nuevamente.');
     }else{
       this.router.navigate(['/resultados', query]);
+      this.results = this.productos.filter(product => product.category === query);
+      console.log(this.results);
+      this.query = query;
       console.log(query);
     }
   }

@@ -13,6 +13,7 @@ export class MenuComponent implements OnInit {
   carrito: boolean = false;
   usuario: Array<UsersInterface> = new Array<UsersInterface>();
   clientes: Array<UsersInterface> = new Array<UsersInterface>();
+  nombreUsuario: string;
 
   constructor( public items: ItemsService) {
    }
@@ -50,22 +51,30 @@ export class MenuComponent implements OnInit {
   }
 
   SignUser(){
-    localStorage.setItem("clientes", JSON.stringify(this.usuario));
+    localStorage.setItem('clientes', JSON.stringify(this.usuario));
+    this.signUp = false;
+    alert('Ahora puedes iniciar sesión');
   }
 
   ReadUser(userName: string , pass: string){
-    this.clientes = JSON.parse(localStorage.getItem("clientes"));
-    console.log(this.clientes);
+    this.clientes = JSON.parse(localStorage.getItem('clientes'));
+    // console.log(this.clientes);
     var usuarioActivo = this.clientes.find(cliente => {
       return cliente.userName === userName;
     });
     console.log(usuarioActivo);
     if (!usuarioActivo){
-      console.log("usuario incorrecto");
+      alert('usuario incorrecto');
     }else if (pass !== usuarioActivo.password){
-      console.log("contraseña erronea");
+      alert('contraseña erronea');
     }else{
-      console.log("sesión iniciada");
+      this.items.userActive = true;
+      this.login = false;
+      this.nombreUsuario = usuarioActivo.name;
     }
+  }
+
+  CloseSesion(){
+    this.items.userActive = false;
   }
 }

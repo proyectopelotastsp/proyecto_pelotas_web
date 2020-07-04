@@ -16,6 +16,7 @@ export class ItemsService {
   voleybol: Array<ProductsInterface> = new Array<ProductsInterface>();
   results: Array<ProductsInterface> = new Array<ProductsInterface>();
   carrito: Array<CartInterface> = new Array<CartInterface>();
+  userActive: boolean = false;
   cartCount: number;
   cartTotal: number = 0;
   query: string;
@@ -56,6 +57,16 @@ export class ItemsService {
         console.log(query);
       });
     }
+  }
+
+  public GoDetails(ref: string){
+      this.LoadBalls().then(() => {
+        this.router.navigate(['/producto', ref]);
+        // this.results = this.productos.filter(product => product.category === query);
+        // console.log(this.results);
+        // this.query = ref;
+        console.log(ref);
+      });
   }
 
   ChangeQuantity(array: number, operation: string, index: number , quantity: number){
@@ -238,19 +249,23 @@ export class ItemsService {
   }
 
   AddToCart(getTitle: string, getImage: string, getPrice: number, getQuantity: number , getSku: string){
-    let totalPrice: number;
-    totalPrice  = getPrice * getQuantity;
-    this.carrito.push(
-      {
-        sku: getSku,
-        title: getTitle,
-        image: getImage,
-        price: totalPrice,
-        quantity: getQuantity
-      }
-    );
-    this.cartCount = this.carrito.length;
-    this.cartTotal += totalPrice;
+    if (this.userActive === false){
+      alert("Inicia sesión antes de comprar");
+    }else{
+      let totalPrice: number;
+      totalPrice  = getPrice * getQuantity;
+      this.carrito.push(
+        {
+          sku: getSku,
+          title: getTitle,
+          image: getImage,
+          price: totalPrice,
+          quantity: getQuantity
+        }
+      );
+      this.cartCount = this.carrito.length;
+      this.cartTotal += totalPrice;
+    }
   }
 }
 

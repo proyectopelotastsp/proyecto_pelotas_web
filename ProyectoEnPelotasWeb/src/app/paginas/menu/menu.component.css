@@ -12,6 +12,10 @@ nav{
     align-items: center;
 }
 
+.user{
+    font-size: 28px;
+}
+
 .menu-links{
     margin-top: 28px;
 }

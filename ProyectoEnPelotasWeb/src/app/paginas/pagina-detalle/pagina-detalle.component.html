@@ -3,7 +3,7 @@
       <img src="https://www.elcolombiano.com/documents/10157/0/580x396/0c15/580d365/none/11101/FJHJ/image_content_28193644_20170307083250.jpg" alt="" class="banner"> 
     <h2>Todos los balones (20)</h2>
     <div class="items-section">
-        <div class="item-container" *ngFor="let item of items_detalle.productos; let i = index">
+        <div class="item-container" *ngFor="let item of items.productos; let i = index">
             <img src="{{ item.image }}" alt="">
             <h3>{{ item.title }}</h3>
             <p class="item-brand">{{ item.brand }}</p>

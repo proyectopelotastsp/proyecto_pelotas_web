@@ -8,7 +8,7 @@ import { ItemsService } from 'src/app/servicios/items.service';
 })
 export class PaginaDetalleComponent implements OnInit {
 
-  constructor( public items_detalle: ItemsService) { }
+  constructor( public items: ItemsService) { }
 
   ngOnInit(): void {
   }

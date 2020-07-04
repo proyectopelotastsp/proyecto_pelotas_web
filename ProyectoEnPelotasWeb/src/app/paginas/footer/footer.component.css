@@ -69,7 +69,7 @@ text-align: justify;
 
 }
 
-.row img{
+.row1 img{
     margin-top: 10px;
     width: 36x;
     height: 36px;
@@ -120,8 +120,6 @@ text-align: justify;
     -moz-box-shadow: 6px 8px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 6px 8px 5px 0px rgba(0,0,0,0.75);
     
-
-
 }
 .copyright a{
     text-decoration: none;

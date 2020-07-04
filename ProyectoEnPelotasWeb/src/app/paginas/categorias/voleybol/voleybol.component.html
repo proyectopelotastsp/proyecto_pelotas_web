@@ -10,11 +10,11 @@
             <p class="item-desc">{{ item.short_desc }}</p>
             <p class="item-price">${{ item.price | number }}</p>
             <!-- quantity selector -->
-            <button (click)="ChangeQuantity('-', i , item.quantity)" class="quantity-btn">-</button>
+            <button (click)="items.ChangeQuantity(5,'-', i , item.quantity)" class="quantity-btn">-</button>
             <span>{{ item.quantity }}</span>
-            <button (click)="ChangeQuantity('+', i , item.quantity)" class="quantity-btn">+</button><br>
+            <button (click)="items.ChangeQuantity(5,'+', i , item.quantity)" class="quantity-btn">+</button><br>
             <!-- qs end -->
-            <button (click)="AddToCart(item.title, item.image, item.price, item.quantity, item.sku)">Añadir</button>
+            <button (click)="items.AddToCart(item.title, item.image, item.price, item.quantity, item.sku)">Añadir</button>
         </div>
     </div>
 </section>

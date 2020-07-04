@@ -57,5 +57,200 @@ export class ItemsService {
       });
     }
   }
+
+  ChangeQuantity(array: number, operation: string, index: number , quantity: number){
+    switch (array){
+      case 0: {
+        // TODOS
+        switch (operation){
+          case '-': {
+            if (quantity === 1){
+              this.productos[index].quantity = 1;
+              alert('este es el minimo de produtos posibles');
+            }else{
+              this.productos[index].quantity--;
+            }
+            break;
+          }
+          case '+': {
+            if (quantity === 5){
+              this.productos[index].quantity = 5;
+              alert('maximo 5 unidades por producto');
+            }else{
+              this.productos[index].quantity++;
+            }
+            break;
+          }
+        }
+        break;
+      }
+
+      case 1: {
+        // Futbol
+        switch (operation){
+          case '-': {
+            if (quantity === 1){
+              this.futbol[index].quantity = 1;
+              alert('este es el minimo de produtos posibles');
+            }else{
+              this.futbol[index].quantity--;
+            }
+            break;
+          }
+          case '+': {
+            if (quantity === 5){
+              this.futbol[index].quantity = 5;
+              alert('maximo 5 unidades por producto');
+            }else{
+              this.futbol[index].quantity++;
+            }
+            break;
+          }
+        }
+        break;
+      }
+
+      case 2: {
+        // Futsal
+        switch (operation){
+          case '-': {
+            if (quantity === 1){
+              this.futbolSala[index].quantity = 1;
+              alert('este es el minimo de produtos posibles');
+            }else{
+              this.futbolSala[index].quantity--;
+            }
+            break;
+          }
+          case '+': {
+            if (quantity === 5){
+              this.futbolSala[index].quantity = 5;
+              alert('maximo 5 unidades por producto');
+            }else{
+              this.futbolSala[index].quantity++;
+            }
+            break;
+          }
+        }
+        break;
+      }
+
+      case 3: {
+        // Baloncesto
+        switch (operation){
+          case '-': {
+            if (quantity === 1){
+              this.baloncesto[index].quantity = 1;
+              alert('este es el minimo de produtos posibles');
+            }else{
+              this.baloncesto[index].quantity--;
+            }
+            break;
+          }
+          case '+': {
+            if (quantity === 5){
+              this.baloncesto[index].quantity = 5;
+              alert('maximo 5 unidades por producto');
+            }else{
+              this.baloncesto[index].quantity++;
+            }
+            break;
+          }
+        }
+        break;
+      }
+
+      case 4: {
+        // Tenis
+        switch (operation){
+          case '-': {
+            if (quantity === 1){
+              this.tennis[index].quantity = 1;
+              alert('este es el minimo de produtos posibles');
+            }else{
+              this.tennis[index].quantity--;
+            }
+            break;
+          }
+          case '+': {
+            if (quantity === 5){
+              this.tennis[index].quantity = 5;
+              alert('maximo 5 unidades por producto');
+            }else{
+              this.tennis[index].quantity++;
+            }
+            break;
+          }
+        }
+        break;
+      }
+
+      case 5: {
+        // Voleibol
+        switch (operation){
+          case '-': {
+            if (quantity === 1){
+              this.voleybol[index].quantity = 1;
+              alert('este es el minimo de produtos posibles');
+            }else{
+              this.voleybol[index].quantity--;
+            }
+            break;
+          }
+          case '+': {
+            if (quantity === 5){
+              this.voleybol[index].quantity = 5;
+              alert('maximo 5 unidades por producto');
+            }else{
+              this.voleybol[index].quantity++;
+            }
+            break;
+          }
+        }
+        break;
+      }
+
+      case 6: {
+        // Buscados
+        switch (operation){
+          case '-': {
+            if (quantity === 1){
+              this.results[index].quantity = 1;
+              alert('este es el minimo de produtos posibles');
+            }else{
+              this.results[index].quantity--;
+            }
+            break;
+          }
+          case '+': {
+            if (quantity === 5){
+              this.results[index].quantity = 5;
+              alert('maximo 5 unidades por producto');
+            }else{
+              this.results[index].quantity++;
+            }
+            break;
+          }
+        }
+        break;
+      }
+    }
+  }
+
+  AddToCart(getTitle: string, getImage: string, getPrice: number, getQuantity: number , getSku: string){
+    let totalPrice: number;
+    totalPrice  = getPrice * getQuantity;
+    this.carrito.push(
+      {
+        sku: getSku,
+        title: getTitle,
+        image: getImage,
+        price: totalPrice,
+        quantity: getQuantity
+      }
+    );
+    this.cartCount = this.carrito.length;
+    this.cartTotal += totalPrice;
+  }
 }
 

@@ -7,7 +7,8 @@
 
 footer{
     width: 100%;
-    background: gray;
+    background: rgb(230, 228, 227);
+    ;
    }
 .container-footer-all{
     width: 100%;
@@ -21,8 +22,10 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+
 .colum1{
-    max-width: 300px;
+    max-width: 400px;
 }
 .colum1 h1{
     
@@ -34,9 +37,18 @@ footer{
 }
 
 .colum1 p{
-font-size: 20px;
+font-size: 16px;
 margin-top: 20px;
 text-align: justify;
+
+
+}
+
+.row label{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: black;
 
 }
 
@@ -45,7 +57,7 @@ text-align: justify;
 
 }
 
-.colom2 h1{
+.colum2 h1{
     font-size: 22px;
     color: black;
     font-weight: bold
@@ -63,7 +75,7 @@ text-align: justify;
     height: 36px;
 }
 .row2 label{
-
+    font-size: 14px;
     margin-top: 10px;
     margin-left: 10px;
     color: black;
@@ -125,12 +137,13 @@ text-align: justify;
         flex-wrap: wrap;
     }
 
-    .colum1{
+    .colum0{
         max-width: 100%;
     }
 
-    .colom2,
+    .colum1,
+    .colum2,
     .colum3{
-        margin-top: 40px;
+        margin-top: 30px;
     }
 }

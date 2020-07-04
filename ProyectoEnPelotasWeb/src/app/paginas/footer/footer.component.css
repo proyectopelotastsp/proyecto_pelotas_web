@@ -27,11 +27,13 @@ footer{
 .colum1 h1{
     font-size: 22px;
     color: black;
+    
 }
 
 .colum1 p{
 font-size: 20px;
 margin-top: 20px;
+text-align: justify;
 
 }
 
@@ -109,6 +111,10 @@ margin-top: 20px;
 
     .container-body{
         flex-wrap: wrap;
+    }
+
+    .colum1{
+        max-width: 100%;
     }
 
     .colom2,

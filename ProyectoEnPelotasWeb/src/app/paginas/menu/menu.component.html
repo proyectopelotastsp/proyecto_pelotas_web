@@ -9,8 +9,14 @@
             <a (click)="Carrito()"><i class="fas fa-cart-plus"><span class="count">{{items.cartCount}}</span></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div *ngIf="!items.userActive">
             <a (click)="Login()">Inicia sesión</a>
             <a (click)="SignUp()">Registrate</a>
+        </div>
+        <div *ngIf="items.userActive">
+            <a (click)="CloseSesion()"><i class="far fa-user-circle user"></i></a>
+            <p>{{nombreUsuario}}</p>
         </div>
     </div>
     <div class="menu-links">

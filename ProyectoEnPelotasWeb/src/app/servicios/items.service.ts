@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ProductsInterface } from '../interfaces/products.interface';
 import { CartInterface } from '../interfaces/cart.interface';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class ItemsService {
   carrito: Array<CartInterface> = new Array<CartInterface>();
   cartCount: number;
 
-  constructor( private http: HttpClient) {
+  constructor( private http: HttpClient , private router: Router) {
     this.LoadBalls().then(() => {
       this.FilterBalls();
     });
@@ -43,7 +44,12 @@ export class ItemsService {
   public SearchBalls(query: string){
     // this.results = this.productos.filter(product => product.category === query);
     // console.log(this.results);
-    console.log(query);
+    if (query.length <= 1){
+      alert('no es una busqueda valida, intenta nuevamente.');
+    }else{
+      this.router.navigate(['/resultados', query]);
+      console.log(query);
+    }
   }
 }
 

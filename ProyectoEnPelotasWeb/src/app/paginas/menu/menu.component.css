@@ -66,7 +66,7 @@ a, button{
 /* --- */
 
 .modal-box {
-    display: block; /* Hidden by default */
+    display: block; 
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */

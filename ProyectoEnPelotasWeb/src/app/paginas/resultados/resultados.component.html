@@ -1,6 +1,6 @@
 
 <section>
-    <h4>Resultados de busqueda para la palabra {{ queryString }}</h4>
+    <h4>Resultados de busqueda para la palabra "{{ queryString }}" ({{items.results.length}})</h4>
     <div class="items-section">
         <div class="item-container" *ngFor="let item of items.results; let i = index">
             <img src="{{ item.image }}" alt="">

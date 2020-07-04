@@ -44,15 +44,16 @@ export class ItemsService {
 
 
   public SearchBalls(query: string){
-    this.LoadBalls();
     if (query.length <= 1){
       alert('no es una busqueda valida, intenta nuevamente.');
     }else{
-      this.router.navigate(['/resultados', query]);
-      this.results = this.productos.filter(product => product.category === query);
-      console.log(this.results);
-      this.query = query;
-      console.log(query);
+      this.LoadBalls().then(() => {
+        this.router.navigate(['/resultados', query]);
+        this.results = this.productos.filter(product => product.category === query);
+        console.log(this.results);
+        this.query = query;
+        console.log(query);
+      });
     }
   }
 }

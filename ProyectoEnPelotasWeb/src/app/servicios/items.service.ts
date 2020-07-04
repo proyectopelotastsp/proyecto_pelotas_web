@@ -59,6 +59,16 @@ export class ItemsService {
     }
   }
 
+  public GoDetails(ref: string){
+      this.LoadBalls().then(() => {
+        this.router.navigate(['/producto', ref]);
+        // this.results = this.productos.filter(product => product.category === query);
+        // console.log(this.results);
+        // this.query = ref;
+        console.log(ref);
+      });
+  }
+
   ChangeQuantity(array: number, operation: string, index: number , quantity: number){
     switch (array){
       case 0: {

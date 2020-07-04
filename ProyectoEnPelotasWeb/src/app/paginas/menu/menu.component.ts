@@ -51,22 +51,22 @@ export class MenuComponent implements OnInit {
   }
 
   SignUser(){
-    localStorage.setItem("clientes", JSON.stringify(this.usuario));
+    localStorage.setItem('clientes', JSON.stringify(this.usuario));
     this.signUp = false;
-    alert("Ahora puedes iniciar sesión");
+    alert('Ahora puedes iniciar sesión');
   }
 
   ReadUser(userName: string , pass: string){
-    this.clientes = JSON.parse(localStorage.getItem("clientes"));
-    console.log(this.clientes);
+    this.clientes = JSON.parse(localStorage.getItem('clientes'));
+    // console.log(this.clientes);
     var usuarioActivo = this.clientes.find(cliente => {
       return cliente.userName === userName;
     });
     console.log(usuarioActivo);
     if (!usuarioActivo){
-      alert("usuario incorrecto");
+      alert('usuario incorrecto');
     }else if (pass !== usuarioActivo.password){
-      alert("contraseña erronea");
+      alert('contraseña erronea');
     }else{
       this.items.userActive = true;
       this.login = false;

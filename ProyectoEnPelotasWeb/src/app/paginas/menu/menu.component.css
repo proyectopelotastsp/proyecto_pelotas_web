@@ -66,13 +66,8 @@ a, button{
 /* --- */
 
 .modal-box {
-<<<<<<< HEAD
     display: block; 
     position: fixed; 
-=======
-    display: block; /* Hidden by default */
-    position: fixed; /* Stay in place */
->>>>>>> parent of a14d692... Update menu.component.css
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;

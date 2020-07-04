@@ -41,8 +41,9 @@ export class ItemsService {
   }
 
   public SearchBalls(query: string){
-    this.results = this.productos.filter(product => product.category === query);
-    console.log(this.results);
+    // this.results = this.productos.filter(product => product.category === query);
+    // console.log(this.results);
+    console.log(query);
   }
 }
 

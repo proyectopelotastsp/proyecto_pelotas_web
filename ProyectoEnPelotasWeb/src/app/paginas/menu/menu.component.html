@@ -5,7 +5,7 @@
             <a href="">EnPelotas<sub>.com</sub></a>
          </div>
          <div class="options">
-            <input type="text" placeholder="Buscar...">
+            <input (keyup.enter)="items.SearchBalls( searched.value )" type="text" placeholder="Buscar..." #searched>
             <a (click)="Carrito()"><i class="fas fa-cart-plus"><span class="count">{{items.cartCount}}</span></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href=""><i class="fab fa-twitter"></i></a>

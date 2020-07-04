@@ -1,5 +1,13 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    border: o none;
+    outline: 0;
+    margin: 0;
+    padding: 0;   
 }
 /* body {
     background-color: #ffdd90;

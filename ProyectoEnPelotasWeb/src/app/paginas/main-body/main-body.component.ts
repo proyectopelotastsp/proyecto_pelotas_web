@@ -16,9 +16,9 @@ export class MainBodyComponent implements OnInit {
   }
 
   ChangeQuantity(operation: string, index: number , quantity: number){
-    switch(operation){
-      case '-':{
-        if(quantity === 1){
+    switch (operation){
+      case '-': {
+        if (quantity === 1){
           this.items.productos[index].quantity = 1;
           alert('este es el minimo de produtos posibles');
         }else{
@@ -26,8 +26,8 @@ export class MainBodyComponent implements OnInit {
         }
         break;
       }
-      case '+':{
-        if(quantity === 5){
+      case '+': {
+        if (quantity === 5){
           this.items.productos[index].quantity = 5;
           alert('maximo 5 unidades por producto');
         }else{
@@ -39,7 +39,7 @@ export class MainBodyComponent implements OnInit {
   }
 
   AddToCart(getTitle: string, getImage: string, getPrice: number, getQuantity: number , getSku: string){
-    var totalPrice: number;
+    let totalPrice: number;
     totalPrice  = getPrice * getQuantity;
     this.items.carrito.push(
       {
@@ -48,7 +48,6 @@ export class MainBodyComponent implements OnInit {
         image: getImage,
         price: totalPrice,
         quantity: getQuantity
-        
       }
     );
     this.items.cartCount = this.items.carrito.length;

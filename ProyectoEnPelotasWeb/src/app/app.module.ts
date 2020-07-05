@@ -15,6 +15,7 @@ import { VoleybolComponent } from './paginas/categorias/voleybol/voleybol.compon
 import { PaginaDetalleComponent } from './paginas/pagina-detalle/pagina-detalle.component';
 import { ResultadosComponent } from './paginas/resultados/resultados.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

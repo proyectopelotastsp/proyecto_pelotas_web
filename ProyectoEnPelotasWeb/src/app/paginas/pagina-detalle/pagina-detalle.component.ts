@@ -9,7 +9,7 @@ import { ItemsService } from 'src/app/servicios/items.service';
 export class PaginaDetalleComponent implements OnInit {
     
   constructor( public items: ItemsService) {
-    this.sku = items.seleccionado.sku;
+    // this.sku = items.seleccionado.sku;
    }
 
   ngOnInit(): void {

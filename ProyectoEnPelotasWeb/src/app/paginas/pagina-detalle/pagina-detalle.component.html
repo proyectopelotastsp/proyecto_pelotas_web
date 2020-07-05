@@ -1,13 +1,29 @@
 <section>
     
-    <h2>{{ items.titulo }}</h2>
+    
     <div class="items-section">
+        <p>sku: {{ items.referencia }}</p>
         <div class="item-container">
             <img src="{{ items.imagen}}" alt="">
-            <h3></h3>
-            <!-- <p class="item-brand">{{ item.brand }}</p>
-            <p class="item-desc">{{ item.long_desc }}</p>
-            <p class="item-price">${{ item.price | number }}</p> -->
+            <div class="details">
+                <h2>{{items.titulo}}</h2>
+                <p>{{items.descripcionCorta}}</p>
+                <p>Unidades disponibles: {{items.unidades}}</p>
+                <p class="item-price">${{items.precio | number}}</p>
+                <div class="product-btns">
+                <button (click)="ChangeQuantity(0)" class="quantity-btn">-</button>
+                <span>{{ cantidad }}</span>
+                <button (click)="ChangeQuantity(1)" class="quantity-btn">+</button><br>
+                <!-- qs end -->
+                <button (click)="items.AddToCart(items.titulo, items.imagen, items.precio, cantidad, items.referencia)">Añadir</button>
+                </div>
+            </div>
+        </div>
+        <div class="desc">
+            <p class="title">Descripción</p>
+            <p>{{items.descripcionLarga}}</p>
+            <p>Los productos en este sitio web hacen parte de un proyecto con fines educativos</p>
+            <a routerLink="/info" target="_blank" class="info">Más información</a>
         </div>
     </div>
 </section>

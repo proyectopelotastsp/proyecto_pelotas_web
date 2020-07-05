@@ -40,6 +40,11 @@ a, button{
     height: 48px;
 }
 
+.options{
+    display: flex;
+    
+}
+
 .options input{
     padding: 0 18px;
     margin: 0 30px;
@@ -145,4 +150,54 @@ a, button{
     display: inline-block;
     border: none;
     background: #f1f1f1;
+  }
+
+  @media screen and (max-width: 700px) {  
+    nav{
+        /* text-align: center; */
+        padding: 6px;
+    }
+    
+    .menu-top{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .options{
+        display: block;
+        margin: 12px 0;
+    }
+    
+    /* .user{
+        font-size: 28px;
+    } */
+    
+    /* .menu-links{
+        margin-top: 28px;
+    } */
+    
+    .logo{
+        font-size: 26px;
+    }
+    
+    a, button{
+        font-size: 16px;
+        padding: 6px;
+    }
+    
+    
+    .logo img{
+        width: 32px;
+        height: 32px;
+    }
+    
+    .options input{
+        margin: 30px 0;
+    }
+    
+    .menu-list{
+        display: inline-block;
+    }
+    
+    
   }

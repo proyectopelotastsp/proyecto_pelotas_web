@@ -3,12 +3,17 @@
         <div class="logo">
             <a href=""><img src="https://cdn.pixabay.com/photo/2019/06/30/21/08/balloon-4308798_960_720.png" alt=""></a>
             <a href="">EnPelotas<sub>.com</sub></a>
-         </div>
+        </div>
          <div class="options">
-            <input (keyup.enter)="items.SearchBalls( searched.value )" type="text" placeholder="Buscar..." #searched>
-            <a (click)="Carrito()"><i class="fas fa-cart-plus"><span class="count">{{items.cartCount}}</span></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+             <div >
+                <input (keyup.enter)="items.SearchBalls( searched.value )" type="text" placeholder="Buscar..." #searched>
+             </div>
+            <div >
+                <a (click)="Carrito()"><i class="fas fa-cart-plus"><span class="count">{{items.cartCount}}</span></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a routerLink="/info" target="_blank"><i class="far fa-question-circle"></i></a>
+            </div>
         </div>
         <div *ngIf="!items.userActive">
             <a (click)="Login()">Inicia sesión</a>
@@ -20,14 +25,19 @@
         </div>
     </div>
     <div class="menu-links">
-        <ul class="menu-list">
-            <li><a routerLink="/inicio">Inicio</a></li>
-            <li><a routerLink="/futbol">Fútbol</a></li>
-            <li><a routerLink="/futbol-sala">Fútbol Sala</a></li>
-            <li><a routerLink="/baloncesto">Baloncesto</a></li>
-            <li><a routerLink="/tennis">Tennis</a></li>
-            <li><a routerLink="/voleybol">Voleybol</a></li>
-        </ul>
+        <div>
+            <ul class="menu-list">
+                <li><a routerLink="/inicio">Inicio</a></li>
+                <li><a routerLink="/futbol">Fútbol</a></li>
+                <li><a routerLink="/futbol-sala">Fútbol Sala</a></li>
+                <li><a routerLink="/baloncesto">Baloncesto</a></li>
+                <li><a routerLink="/tennis">Tennis</a></li>
+                <li><a routerLink="/voleybol">Voleybol</a></li>
+            </ul>
+        </div>
+        <div>
+            
+        </div>
     </div>
 </nav>
 
@@ -80,7 +90,6 @@
             <div class="item-container" *ngFor="let item of items.carrito; let i = index">
                 <img src="{{ item.image }}" alt="">
                 <p>{{ item.title }} - (X{{ item.quantity }}) -</p>
-                <!-- <p class="item-price"></p> -->
                 <p class="item-price">${{ item.price | number }}</p>
             </div>
             <p>TOTAL: ${{ items.cartTotal | number }}</p>

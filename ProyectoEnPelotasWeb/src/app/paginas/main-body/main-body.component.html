@@ -1,5 +1,5 @@
 <section>
-    <!-- imagen de la señora - Por Giovanny -->
+    <!-- Barra de busqueda -->
     <img src="https://www.elcolombiano.com/documents/10157/0/580x396/0c15/580d365/none/11101/FJHJ/image_content_28193644_20170307083250.jpg" alt="" class="banner"> 
     <h4>Todos los balones ({{items.productos.length}})</h4>
     <div class="items-section">
@@ -8,6 +8,7 @@
             <a (click)="items.GoDetails(item.sku)"><h3>{{ item.title }}</h3></a>
             <p class="item-brand">{{ item.brand }}</p>
             <p class="item-desc">{{ item.short_desc }}</p>
+            <!-- Trae precio -->
             <p class="item-price">${{ item.price | number }}</p>
             <!-- quantity selector -->
             <button (click)="items.ChangeQuantity(0,'-', i , item.quantity)" class="quantity-btn">-</button>
@@ -17,5 +18,6 @@
             <button (click)="items.AddToCart(item.title, item.image, item.price, item.quantity, item.sku)">Añadir</button>
         </div>
     </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7939.860242336941!2d-72.85346632582305!3d5.7232058834080215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a492a3e9913f9%3A0xac30644ba57db764!2zTW9uZ3VpLCBNb25ndcOtLCBCb3lhY8Oh!5e0!3m2!1ses!2sco!4v1593908937620!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </section>
 

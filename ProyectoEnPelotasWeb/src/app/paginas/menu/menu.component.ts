@@ -19,13 +19,6 @@ export class MenuComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.clientes.push({
-      userName: 'cafranco4',
-      name: 'Carlos',
-      lastName: 'Franco',
-      email: 'cafranco4',
-      password: '1234',
-    });
   }
 
   SignUp(){
@@ -58,11 +51,9 @@ export class MenuComponent implements OnInit {
 
   ReadUser(userName: string , pass: string){
     this.clientes = JSON.parse(localStorage.getItem('clientes'));
-    // console.log(this.clientes);
     var usuarioActivo = this.clientes.find(cliente => {
       return cliente.userName === userName;
     });
-    console.log(usuarioActivo);
     if (!usuarioActivo){
       alert('usuario incorrecto');
     }else if (pass !== usuarioActivo.password){

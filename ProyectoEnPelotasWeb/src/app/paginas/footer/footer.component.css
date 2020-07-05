@@ -17,6 +17,23 @@
      padding: 40px;
  
  }
+
+ .informacion h1{
+     
+    font-size: 22px;
+    color: black;
+    font-weight: bold
+
+    
+}
+/* texto de informacion mongui*/
+.informacion p{
+font-size: 16px;
+margin-top: 20px;
+text-align: justify;
+
+
+}
  .lu{
      z-index: 2000;
      
@@ -35,110 +52,63 @@
      -o-transition:all 500ms ease;
      transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
  }
- .social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
-     .social ul li .icon-twitter {background: #00abf0;}
-     .social ul li .icon-pinterest {background: #ae181f;}
-     
-     
+    
+/* hover icono redes sociales*/
      .social ul li a:hover {
          background:rgb(34, 34, 31); /* Cambiamos el fondo cuando el usuario pase el mouse */
          padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
      }
-     .colum3 ul li a:hover {
-        background:rgb(34, 34, 31); /* Cambiamos el fondo cuando el usuario pase el mouse */
-        padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
- 
-     }
+     
  .container-body{
      display: flex;
      justify-content: space-between;
  }
  
  
- .colum1{
+ .informacion{
      max-width: 400px;
  }
- .colum1 h1{
-     
-     font-size: 22px;
-     color: black;
-     font-weight: bold
  
-     
- }
+
  
- .colum1 p{
- font-size: 16px;
- margin-top: 20px;
- text-align: justify;
- 
- 
- }
- 
- .row label{
-     font-size: 14px;
-     margin-top: 10px;
-     margin-left: 10px;
-     color: black;
- 
- }
- 
- .colum2{
+ .social{
      max-width: 400px;
  
  }
- 
+ /* informacion de redes*/
  .social h1{
      font-size: 22px;
      color: black;
      font-weight: bold
      
-     
- }
- .row2{
-     margin-top: 20px;
-     display: flex;
- 
  }
  
- 
- .colum3{
-     max-width: 400px;
- 
- }
- .colum3 h1{
+ /* informacion de contacto*/
+ .contacto h1{
      font-size: 22px;
      color: black;
      font-weight: bold
- 
+
  }
- 
+ /* estilo oscuro informacion de contacto*/
  .social li{
      margin-top: 15px;
      display: flex;  
      font-size: 30px;
-
-     
+      
  }
- .colum3 li{
+ .contacto ul li a:hover {
+    background:rgb(34, 34, 31); /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+
+ }
+ .contacto li{
     margin-top: 15px;
     display: flex;  
     font-size: 30px;
  }
- 
- .row2{
-     margin-top: 20px;
-     display: flex;
- 
- }
- 
- .row2 label{
-    margin-top: 10px;
-     margin-left: 20px;
-     max-width: 150px;
-     
- 
- }
+
+
  .container-footer{
      width: 100%;
      display: flex;
@@ -169,26 +139,34 @@
  .informetion a{
     color: blue;
      
-
  }
- 
- @media screen and (max-width:1100px){
+ .contacto ul li a {
+    display: inline-block;
+    color:#fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */ 
+ }
+    @media screen and (max-width:1100px){
  
      .container-body{
          flex-wrap: wrap;
      }
  
-     .colum0{
+     .informacion{
          max-width: 100%;
      }
  
-     .colum1,
-     .colum2,
-     .colum3{
+     .social,
+     .contacto,
+     .container-footer{
          margin-top: 30px;
 
      }
-     .colum3 ul li a {
+     .contacto ul li a {
      display: inline-block;
      color:#fff;
      background: #000;

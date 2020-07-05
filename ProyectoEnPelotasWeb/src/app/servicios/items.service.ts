@@ -62,7 +62,7 @@ export class ItemsService {
     }else{
       this.LoadBalls().then(() => {
         this.router.navigate(['/resultados', query]);
-        this.results = this.productos.filter(product => product.category === query);
+        this.results = this.productos.filter(product => product.long_desc.includes(query));
         console.log(this.results);
         this.query = query;
         console.log(query);

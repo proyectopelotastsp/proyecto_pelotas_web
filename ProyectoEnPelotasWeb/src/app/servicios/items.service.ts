@@ -28,9 +28,9 @@ export class ItemsService {
   descripcionCorta: string;
   descripcionLarga: string;
   imagen: string;
-  precio: string;
-  cantidad: string;
-  unidades: string;
+  precio: number;
+  cantidad: number;
+  unidades: number;
 
   constructor( private http: HttpClient , private router: Router) {
     this.LoadBalls().then(() => {
@@ -75,23 +75,18 @@ export class ItemsService {
         var productoSeleccionado = this.productos.find(producto => {
           return producto.sku === ref;
         });
-        // this.results = this.productos.filter(product => product.category === query);
-        // console.log(this.results);
-        // this.query = ref;
         this.seleccionado.push(productoSeleccionado);
         this.router.navigate(['/producto', ref]);
-        console.log(ref);
-        console.log(productoSeleccionado.title);
-        console.log(this.seleccionado);
+        // Asignar
+        this.referencia =this.seleccionado[0].sku;
         this.marca = this.seleccionado[0].brand;
-        this.titulo = this.seleccionado[0].brand;
-        this.descripcionCorta = this.seleccionado[0].brand;
+        this.titulo = this.seleccionado[0].title;
+        this.descripcionCorta = this.seleccionado[0].short_desc;
         this.descripcionLarga = this.seleccionado[0].long_desc;
         this.imagen = this.seleccionado[0].image;
-        this.precio = this.seleccionado[0].brand;
-        this.cantidad = this.seleccionado[0].brand;
-        this.unidades = this.seleccionado[0].brand;
-        console.log(this.descripcionLarga);
+        this.precio = this.seleccionado[0].price;
+        this.cantidad = this.seleccionado[0].quantity;
+        this.unidades = this.seleccionado[0].stock;
       });
   }
 

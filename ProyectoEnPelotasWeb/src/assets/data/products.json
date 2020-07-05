@@ -1,29 +1,5 @@
 [
     {
-        "sku": "B000001",
-        "title": "Balón de Voleibol Playa 1000 Softset",
-        "short_desc": "Balón de Voleibol Playa Nike Color verde",
-        "long_desc": "Balon de futbol",
-        "brand": "Nike",
-        "price": "12000",
-        "image": "https://falabella.scene7.com/is/image/FalabellaCO/6176462_1?wid=1500&hei=1500&qlt=70",
-        "stock": 0,
-        "quantity": 1,
-        "category": "Futbol"
-    },
-    {
-        "sku": "B000002",
-        "title": "Balon Baloncesto Golty Professional Gold No 7",
-        "short_desc": "Balon Baloncesto Professional",
-        "long_desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus asperiores perspiciatis quibusdam vitae, aspernatur earum voluptas officiis accusantium beatae, non voluptatem illo. Eum, dolore in? Ad doloremque necessitatibus adipisci repellendus",
-        "brand": "GOLTY",
-        "price": "99900",
-        "image": "https://falabella.scene7.com/is/image/FalabellaCO/6269441_1?wid=1500&hei=1500&qlt=70",
-        "stock": 0,
-        "quantity": 1,
-        "category": "Futbol"
-    },
-    {
         "sku": "000001",
         "title": "Balón de Futbol epp II club",
         "short_desc": "un balón resistente para perfeccionar tus habilidades",

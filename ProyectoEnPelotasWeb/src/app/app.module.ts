@@ -14,6 +14,7 @@ import { BaloncestoComponent } from './paginas/categorias/baloncesto/baloncesto.
 import { VoleybolComponent } from './paginas/categorias/voleybol/voleybol.component';
 import { PaginaDetalleComponent } from './paginas/pagina-detalle/pagina-detalle.component';
 import { ResultadosComponent } from './paginas/resultados/resultados.component';
+import { AboutComponent } from './paginas/about/about.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ResultadosComponent } from './paginas/resultados/resultados.component';
     BaloncestoComponent,
     VoleybolComponent,
     PaginaDetalleComponent,
-    ResultadosComponent
+    ResultadosComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

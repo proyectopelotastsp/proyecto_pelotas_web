@@ -4,8 +4,8 @@
     <h4>Todos los balones ({{items.futbol.length}})</h4>
     <div class="items-section">
         <div class="item-container" *ngFor="let item of items.futbol; let i = index">
-            <a (click)="items.GoDetails(item.sku)"><img src="{{ item.image }}" alt=""></a>
-            <a (click)="items.GoDetails(item.sku)"><h3>{{ item.title }}</h3></a>
+            <a class="pointer" (click)="items.GoDetails(item.sku)"><img src="{{ item.image }}" alt=""></a>
+            <a class="pointer" (click)="items.GoDetails(item.sku)"><h3>{{ item.title }}</h3></a>
             <p class="item-brand">{{ item.brand }}</p>
             <p class="item-desc">{{ item.short_desc }}</p>
             <p class="item-price">${{ item.price | number }}</p>

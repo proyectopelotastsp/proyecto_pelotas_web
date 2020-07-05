@@ -9,15 +9,15 @@
                 <input (keyup.enter)="items.SearchBalls( searched.value )" type="text" placeholder="Buscar..." #searched>
              </div>
             <div >
-                <a (click)="Carrito()"><i class="fas fa-cart-plus"><span class="count">{{items.cartCount}}</span></i></a>
+                <a (click)="Carrito()"><i class="fas fa-cart-plus pointer"><span class="count">{{items.cartCount}}</span></i></a>
                 <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
                 <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                 <a routerLink="/info" target="_blank"><i class="far fa-question-circle"></i></a>
             </div>
         </div>
         <div *ngIf="!items.userActive">
-            <a (click)="Login()">Inicia sesión</a>
-            <a (click)="SignUp()">Registrate</a>
+            <a class="pointer" (click)="Login()">Inicia sesión</a>
+            <a class="pointer" (click)="SignUp()">Registrate</a>
         </div>
         <div *ngIf="items.userActive">
             <a (click)="CloseSesion()"><i class="far fa-user-circle user"></i></a>
@@ -92,7 +92,8 @@
                 <p>{{ item.title }} - (X{{ item.quantity }}) -</p>
                 <p class="item-price">${{ item.price | number }}</p>
             </div>
-            <p>TOTAL: ${{ items.cartTotal | number }}</p>
+            <p class="p-padding">TOTAL: ${{ items.cartTotal | number }}</p>
+            <a routerLink="/info" target="_blank" class="a-btn">Comprar</a>
         </div>
         </div>
     </div>

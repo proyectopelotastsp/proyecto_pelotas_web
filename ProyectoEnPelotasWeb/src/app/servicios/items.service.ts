@@ -21,6 +21,16 @@ export class ItemsService {
   cartCount: number;
   cartTotal: number = 0;
   query: string;
+  // seleccionado
+  referencia: string;
+  marca: string;
+  titulo: string;
+  descripcionCorta: string;
+  descripcionLarga: string;
+  imagen: string;
+  precio: string;
+  cantidad: string;
+  unidades: string;
 
   constructor( private http: HttpClient , private router: Router) {
     this.LoadBalls().then(() => {
@@ -71,7 +81,17 @@ export class ItemsService {
         this.seleccionado.push(productoSeleccionado);
         this.router.navigate(['/producto', ref]);
         console.log(ref);
+        console.log(productoSeleccionado.title);
         console.log(this.seleccionado);
+        this.marca = this.seleccionado[0].brand;
+        this.titulo = this.seleccionado[0].brand;
+        this.descripcionCorta = this.seleccionado[0].brand;
+        this.descripcionLarga = this.seleccionado[0].long_desc;
+        this.imagen = this.seleccionado[0].image;
+        this.precio = this.seleccionado[0].brand;
+        this.cantidad = this.seleccionado[0].brand;
+        this.unidades = this.seleccionado[0].brand;
+        console.log(this.descripcionLarga);
       });
   }
 
